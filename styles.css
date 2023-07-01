@@ -1,0 +1,14 @@
+#navBar {
+    background-color: black;
+    padding: 2%;
+    overflow: hidden;
+}
+
+#navBar a {
+    float: right;
+    color: gray;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    font-size: 17px;
+}
