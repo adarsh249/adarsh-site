@@ -1,14 +1,19 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
 .header {
+    position: sticky;
+    top: 10px;
     display: flex;
     flex-direction: row;
-    border: 10px solid black;
+    border: 5px solid black;
     background-color: blue;
-    position: relative;
     width: auto;
     height: 70px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 0 20px;
+    z-index: 1;
 }
 .myName {
     flex: 1;
@@ -36,7 +41,49 @@
 }
 
 .container {
+    padding-top: 100px;
+    padding-bottom: 700px;
+    height: auto;
     background-color: green;
-    display: block;
+    position: relative;
+    margin: 100px;
+}
+
+p {
+    display: flex;
+    font-size: 35px;
+}
+
+#hello {
+    display: inline;
+    font-size: 80px;
+}
+
+.socials {
+    display: flex;
     justify-content: center;
+    padding-top: 40px;
+}
+
+.socials button {
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 30px 70px 30px 70px;
+    background-color: orange;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 25px;
+    width: 300px;
+    height: auto;
+}
+
+body {
+    background-color: black;
+}
+#pfp {
+    max-width: 3%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 30px;
 }
