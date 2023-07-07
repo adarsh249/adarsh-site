@@ -86,10 +86,16 @@ body {
 }
 
 .projects {
-    padding-bottom: 500px;
-    margin: 80px;
+    margin: 80px 80px 20px 80px;
 }
 
+.projects p {
+    font-size: 20px;
+}
+
+.projects b {
+    color:#5749b3;
+}
 @keyframes animate {
     0% {
         opacity: 0;

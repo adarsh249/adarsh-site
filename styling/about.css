@@ -23,6 +23,11 @@ dt {
 dd, ul, li {
     font-size: 15px;
 }
+
 ul {
     list-style-type: none;
+}
+
+b {
+    color: #5749b3;
 }

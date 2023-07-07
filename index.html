@@ -12,6 +12,7 @@
     <script src="./scripts/main.js" defer></script>
     <link rel="stylesheet" href="./styling/header.css">
     <link rel="stylesheet" href="./styling/main.css">
+    <link rel="stylesheet" href="./styling/footer.css">
     <title>Adarsh's Portfoilo</title>
 </head>
 <body>
@@ -41,6 +42,70 @@
         <div class="projects">
             <h1>My Projects</h1>
             <hr>
+            <h3>Analytics Dashboard | HTML, CSS, Node.js, PHP, MySQL</h3>
+            <p>
+                This is the first project on my resume, as it is one of my most comprehensive project. In this project, we created a web server using <b>Apache</b> 
+                and <b>Digital Ocean</b> to track data about users who enter our site. Any user who entered our site was given a session ID (cookie) and we simply tracked
+                their static, performance, and activity data. This was including, but not limited to, how long the page took to load, what kind of device they are on, the dimensions
+                of the device, exactly where their cursor was on our site and what keys they pressed, how long they were idle for, if they were idle, and when they returned. We then created
+                our own <b>RESTful API</b> using <b>Node.js</b> and injected this data into our <b>MySQL</b> database. After this part was done, we created a dashboard for verified users to 
+                visualize this data. We implemented an authentication system using <b>JWT</b> and created normal users and admin users. Normal users were allowed to checkout the dashboard we
+                created and generate a two-page report about the dashboard. Admin users could do this as well, but in addition, had a user management tab that would bring up an user management
+                table, where they could add, delete, and update users. This is essentially a <b>CRUD</b> grid. We used <b>PHP</b> to extract data from the database and create both the user management
+                table and the dashboard. The dashboard was creating using the <b>ZingChart</b> library. The management table was created using the <b>ZingGrid</b> library. We used <b>HTML/CSS</b> to
+                create these things as well. Unfortunatley, there is no GitHub associated with this project and the link no longer works since we shut down the server as it became too expensive to run for
+                us college students. However, the code is available upon request.
+            </p>
+            <hr>
+            <h3>Origami Fortune Teller | HTML, CSS, JavaScript |
+            <a href="https://github.com/orgs/cse110-sp23-group1/repositories" target="_blank">GitHub</a> | 
+            <a href="https://cse110-sp23-group1.github.io/Origami-Fortune-Teller/" target="_blank">Project Link</a>
+            </h3>
+            <p>
+                This was a project created by a group of 10 members, where I was the team-lead, and the main goal was to both build something and follow the Agile process. I led a team of 
+                9 other developers to build this web application using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. We followed the Agile process meaning, in week 2, we started off with team
+                bonding exercises. Then in week 3, we began <b>brainstorming</b> using Miro board. In week 4, we created <b>user personas/stories</b>, to create a user centered application. Then,
+                in week 5, a prototype design on <b>Figma</b> was created, meaning we had numerous <b>svg</b> options and also <b>wireframes</b> to help us guide ourselves. Then, from weeks 6 to 9,
+                the focus was on simply coding. I held weekly <b>sprints</b>. This obviously called for weekly <b>sprint review meetings</b> and <b>retrospective meetings</b>. In week 10, we concluded
+                the project by creating robust testing through <b>Jest/Puppeteer</b>. This whole project was mostly collaborated through <b>Slack</b>, <b>Discord</b>, and <b>GitHub</b>. Check out the GitHub 
+                link which will have both our administrative repository and the coding one. In the admin repository, you can find anything <b>Agile</b> related including <b>meeting notes</b>, 
+                <b>ADRs</b> and the practices mentioned earlier. Throughout this period, we also created a robust <b>CI/CD</b> pipeline. Those documents can also be found in the <b>GitHub</b>. This pipeline
+                included a linter, the <b>Code Climate</b> quality checker, a manual <b>pull request</b> review, automated testing through <b>Puppeteer</b> and <b>Jest</b> as well as a <b>JSDocs</b> deployment.
+            </p>
+            <hr>
+            <h3>File Compressor | C++</h3>
+            <p>
+                This project, entirely in <b>C++</b>, took input of a file and compressed this file. The compression algorithm used was the <b>Huffman Compression Algorithm</b>. This was built using a priority
+                queue and binary trees. A custom tree was made to create this compression algorithm. In addition, a special header was added onto the compressed data, since this same program also was able to
+                uncompress the same file back to its oringial format, making this lossless. In both the compress and uncompress algorithms, we create a Huffman Coding Tree, which is then used to compress and uncompress
+                the files. In short, we read the data in the file bit by bit, compressed the data in buffers, then sent the buffer over to compress it. For uncompressing, we read our special header to see how we should
+                create this new coding tree, then we uncompressed the compressed file using the Huffman Decode tree. There is no GitHub or link for this project, but a demo or code can be given upon request.
+            </p>
+            <hr>
+            <h3>In-n-Out Mobile Ordering Application | Swift |
+                <a href="https://github.com/adarsh249/Innout-Mobile-Ordering" target="_blank">GitHub</a>
+            </h3>
+            <p>
+                In this project, I created a mobile ordering application for the popular food brand, In-n-Out. This was entirely done in <b>Swift</b> through <b>XCode</b>. It was mainly
+                tested on the iPhone 12 mockup, however, this project is mostly unfinished. The parts that work include a full menu where you can add items to a cart. Then, a cart view where
+                users can checkout and see their total after a tax and tip. Then, users would be redirected to an Apple Maps screen where they can see the nearest In-n-Out where their food is being
+                prepared. This app still needs a refactor process and more work done it to be complete.
+            </p>
+            <hr>
+            <h3>Connect 6 | HTML, CSS, JavaScript | 
+                <a href="https://github.com/adarsh249/connect6" target="_blank">GitHub</a>
+            </h3>
+            <p>
+                This was one of my first solo projects ever. Instead of connecting 4 tiles, like in Connect 4, you need to connect 6 tiles. In addition, when its your turn, you can either add a tile in or 
+                remove a tile from the bottom which would bring down the tiles in that column. The functionality itself works flawlessly on this web application, however, it has not yet been deployed because 
+                it is missing a couple key features. First, I still need to implement multiplayer functionality. I am still inexperienced in this part of the web, but am working on it. In addition, the CSS animations
+                need to be far smoother for this application. Once those changes are made, a refactor process definitely must happen as the code is too many lines and could use a cleanup. However, it isn't bad for a first
+                project. This was done entirely in <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>.
+            </p>
+            <hr>
+        </div>
+        <div class="footer">
+
         </div>
     </main>
 
