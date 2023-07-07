@@ -1,0 +1,105 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+.container {
+    padding-top: 30px;
+    padding-bottom: 150px;
+    height: auto;
+    position: relative;
+    margin: 50px;
+}
+
+p {
+    font-size: 35px;
+}
+
+#welcome {
+    display: inline-flex;
+    font-size: 80px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.socials button {
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 30px 70px 30px 70px;
+    background-color: #5749b3;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 25px;
+    width: 300px;
+    height: auto;
+}
+
+.socials button:hover {
+    cursor: pointer;
+    background-color: #0c0633;
+}
+
+body {
+    background-color: #0c0633;
+}
+
+.about {
+    display: block;
+    margin: 50px;
+    padding-bottom: 10px;
+}
+
+/* Arrow styling from https://codepen.io/vlt_dev/pen/NWMNzpE */
+.arrow {
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+.arrow span {
+    display: block;
+    width: 0.5vw;
+    height: 0.5vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+.projects h1 {
+    text-align: center;
+}
+
+.projects {
+    padding-bottom: 500px;
+    margin: 80px;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
