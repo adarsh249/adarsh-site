@@ -1,3 +1,7 @@
+/**
+ * THIS IS CURRENTLY CODE NOT BEING USED. GOAL IS TO MAKE A CUSTOM HTML ELEMENT TO MAKE IT EASIER
+ * TO ADD PROJECTS.
+ */
 class project extends HTMLElement {
     constructor() {
         super();
