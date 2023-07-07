@@ -3,9 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="./styling/header.css">
+    <link rel="stylesheet" href="./styling/about.css">
     <title>About Me</title>
 </head>
 <body>
-    <p>Insert relevant courses, techical skills, more about me</p>
+    <div class="header">
+    </div>
+    <main>
+        <h1>More About Me! - A Detailed Resume</h1>
+        <h2>Education</h2>
+        <ul>
+            <li>After high school, I went to Cypress Community College where a majority of the courses were online due to COVID-19. I recieved an Associate's
+            Degree for Transfer in Computer Science and ended up transfering to the University of Caliornia, San Diego as a computer science major where I am set 
+            to graduate in June 2024. My GPA at Cypress Community College was 3.89 and my current GPA at UCSD is 3.73.</li>
+        </ul>
+        <h2>Relevant Courses</h2>
+        <ul>
+            <li>The majority of relevant courses have come from UCSD, my current school. I'll list some of the my favorite ones and the most important ones below. They will
+            be in order of most recently taken.</li>
+        </ul>
+        <dl>
+            <dt>CSE 135 - Online Database Analytics Applications</dt><br>
+            <dd>
+                This class was about collecting data and outputting in a format that is readable. Emphasis was placed on what kind of data we should be collecting,
+                how much data we should collect and what are the best ways to present this data. This class went very in depth into data visualization. We had four assignments
+                that constantly built upon each other, but the end goal is what is seen on the resume. Using <b>Apache</b> and <b>Digital Ocean</b> we, a group of 3, first created our own site and domain.
+                Then, as a mini assignment, we did learn about <b>CGI</b> and other programming languages. In total, we used <b>Perl</b>, <b>C</b>, <b>JSP</b>, <b>Python</b>, <b>Ruby</b>, <b>PHP</b> and a couple other languages to
+                learn about sessioning and other things. However, the bulk of what we learned were in assignments 3 and 4. We created a collector.js script and in this script we collected user's 
+                static, performance and activity data. In other words, any time a user entered our site, we gave them a session ID and checked everything about their browser, computer, connection,
+                device type, etc. We also checked their load time, how long it took to load the page, what time they entered the page, etc. For activity data, we collected the cursor positions on the 
+                page at all times, keys pressed, when the user left our page, when they came back, how long they were idle for, if they went idle at all. We checked numerous things. Then, using <b>Node.js</b>,
+                we would send POST requests to our custom routes we created which would then store this data in a <b>MySQL</b> database. You could also go to our site and see the data in <b>JSON</b> readable format. 
+                Finally, using ALL this data, we made multiple graphs, (line charts, pie charts, bar charts) and made a complete analytical dashboard. In our case, we focused on the relationship between
+                device type, page loading time, and network connection. We created a full on dashboard where users could see this information in a readable format. In order to access this dashboard, you must
+                have been a registered user. We created a login form, using <b>JWT</b> tokens. Non-users could access nothing. Normal users had access to the dashboard and a two-page report about the dashboard. Admin
+                level users had access to both these things in addition to a user management table where admins could create, update and delete users. The majority of this whole operation was done in <b>Node.js</b>,
+                with the graphs being done in <b>PHP</b> extracting data from a <b>MySQL</b> database. The rest of the site was built on <b>HTML</b> and <b>CSS</b>. Charts were created using <b>ZingChart</b> and the management table was
+                created using <b>ZingGrid</b>.
+            </dd>
+        </dl>
+        <dl>
+            <dt>CSE 110 - Software Engineering</dt><br>
+            <dd>
+                In this class, you are randomly placed in groups of 10 and assigned a role. I happened to be assigned team lead. This class focuses on the process of software engineering and how you can get from
+                start to finish of an application. The theme this quarter was fortune telling and all resources, including AI and ChatGPT, were allowed to be used. I'll break this class down through a week by week
+                process. In week 1 and 2, there was the introduction to the class and getting to know your team members better. This class follows the <b>Agile</b> process directly. As a team lead, I set up daily stand ups,
+                led the weekly team meeting and provided random announcements  through the Slack channel. I also contributed to the code base. In week 3, we began brainstorming and created user stories and design. Then,
+                in week 4, we began creating our spec and thought of process models, diagramming basic flow charts, and having minimum requirements. In week 5, we created wire frames and designs of what we wanted
+                the final product to look like. Then, from weeks 6 to 10, the coding process began along with testing nearing the end. Coding practices included having a robust <b>CI/CD</b> pipeline, having weekly sprints and 
+                weekly retrospectives after the sprints as well. <b>Git</b> was utilized extensively and every team member by the end got used to working together in an environment around git and GitHub. You can check out the 
+                end product <a href="https://cse110-sp23-group1.github.io/Origami-Fortune-Teller/" target="_blank">here</a>. There is lots to see on the GitHub which can be accessed upon request.
+            </dd>
+        </dl>
+        <dl>
+            <dt>CSE 101 - Design and Analysis of Algorithms</dt><br>
+            <dd>
+                This was not my favorite class at all, but it was an important one. There was no physical coding in this class, but we learned how to analyze problems and create algorithms based off 
+                these problems and provide a correct solution with a proof to the problems. Example algorithms were under things such as sorting, searching, pattern matching, and graph
+                and network problems.
+            </dd>
+        </dl>
+        <dl>
+            <dt>CSE 100 - Advanced Data Structures</dt><br>
+            <dd>
+                This was one of my favorite classes. In this class, we went over data structures in <b>C++</b>. We learned the best, worst, and average case for all data structures and implemented our own as well. Data structures
+                included trees, graphs, priority queues, hash tables. We also learned about memory management, pointers, and recursion and created a couple of fun projects at the end.
+            </dd>
+        </dl>
+        <dl>
+            <dt>CSE 140L - Digital Systems Laboratory</dt><br>
+            <dd>
+                This was an extremely tough class. In this class, we used <b>Quartus</b>, <b>DESim</b>, and <b>ModelSim</b> in <b>SystemVerilog</b> to create multiple hardware simulation projects. Projects included a basic alarm clock with AM/PM and the ability to
+                set an alarm on any day of the week, month, and year. We also recreated the infamous  Simon Says game as well as ended the class by creating an encryption service where input text would be encrypted.
+            </dd>
+        </dl>
+        <h2>Experience</h2>
+        <ul>
+            <li>I do not have any computer science experience yet. Hence, why I am looking for a new grad job. However, I used to be a Supplemental Instruction Leader for Calculus II, as
+            seen on the resume. I also have an SI certification for that subject matter. I am currently looking into tutoring for computer science in my last upcoming school year. Other less relevant experience 
+            can be seen on <a href="https://www.linkedin.com/in/adarshpatel249/" target="_blank">LinkedIn</a>.</li>
+        </ul>
+        <h2>Techincal Skills</h2>
+        <ul>
+            <li>I have quite a bit of experience in Java, C++, MySQL, JavaScript, HTML/CSS, PHP, Node.js, Jest/Puppeteer.</li>
+            <li>I have some experience in SystemVerilog and Python.</li>
+            <li>I have little experience in Swift, C, Perl, Ruby, and JSP.</li>
+            <li>At the end of the day, however, as long as the fundamentals are down, learning a new language is not difficult.</li>
+            <li>I have extensive experience with Git/GitHub and constantly use Visual Studio Code. I also have some experience with ModelSim, Quartus, DESim and XCode.</li>
+          </ul>
+    </main>
 </body>
 </html>

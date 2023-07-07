@@ -8,20 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <script src="./scripts/buttons.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="./styling/header.css">
+    <link rel="stylesheet" href="./styling/main.css">
     <title>Adarsh's Portfoilo</title>
 </head>
 <body>
+    <div class="header">
+    </div>
     <main>
-        <div class="header">
-            <img src="./images/pfp.jpg" id="pfp">
-            <h1 class="myName">Adarsh Patel</h1>
-            <nav id="navBar">
-                <a href="about.html">About</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
-            </nav>
-        </div>
         <div class="container">
             <div class="about">
                 <b id="welcome">Welcome!</b>
@@ -31,9 +27,9 @@
                 </p>
             </div>
             <div class="socials">
-                <button>LinkedIn</button>
-                <button>GitHub</button>
-                <button>My Resume</button>
+                <button id="linkedin">LinkedIn</button>
+                <button id="github">GitHub</button>
+                <button id="resume">My Resume</button>
             </div>
             <!-- Arrow from https://codepen.io/vlt_dev/pen/NWMNzpE-->
             <div class="arrow">
@@ -41,6 +37,10 @@
                 <span></span>
                 <span></span>
             </div>
+        </div>
+        <div class="projects">
+            <h1>My Projects</h1>
+            <hr>
         </div>
     </main>
 

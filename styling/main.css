@@ -2,39 +2,10 @@
     font-family: 'Roboto Mono', monospace;
     color: white;
 }
-.header {
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: 70px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    z-index: 1;
-    background-color: #0c0633;
-}
-#navBar {
-    display: flex;
-    float: right;
-}
 
-#navBar a {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 10px;
-    margin: 0 0 0 5px;
-    color: white;
-    text-decoration: none;
-}
-.myName {
-    text-align: center;
-}
 .container {
     padding-top: 30px;
-    padding-bottom: 700px;
+    padding-bottom: 150px;
     height: auto;
     position: relative;
     margin: 50px;
@@ -76,13 +47,6 @@ p {
 body {
     background-color: #0c0633;
 }
-#pfp {
-    float: left;
-    max-width: 3%;
-    height: auto;
-    border: 3px solid white;
-    border-radius: 30px;
-}
 
 .about {
     display: block;
@@ -92,9 +56,8 @@ body {
 
 /* Arrow styling from https://codepen.io/vlt_dev/pen/NWMNzpE */
 .arrow {
-    padding-top: 70px;
     position: absolute;
-    top: 50%;
+    top: 94%;
     left: 50%;
     transform: translate(-50%, -50%);
  }
@@ -116,6 +79,15 @@ body {
 
 .arrow span:nth-child(3) {
     animation-delay: -0.4s;
+}
+
+.projects h1 {
+    text-align: center;
+}
+
+.projects {
+    padding-bottom: 500px;
+    margin: 80px;
 }
 
 @keyframes animate {
