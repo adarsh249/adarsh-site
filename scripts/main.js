@@ -14,12 +14,12 @@ document.querySelector('.header').innerHTML = header;
 document.querySelector('.footer').innerHTML = footer;
 const headerName = document.querySelector('.myName');
 headerName.addEventListener('click', () => {
-    window.open('https://adarsh249.github.io/adarsh-site/');
+    window.location.href = 'https://adarsh249.github.io/adarsh-site/';
 });
 
 const headerImage = document.getElementById('pfp');
 headerImage.addEventListener('click', () => {
-    window.open('https://adarsh249.github.io/adarsh-site/');
+    window.location.href = 'https://adarsh249.github.io/adarsh-site/';
 });
 
 const backToTopButton = document.querySelector('.top');
