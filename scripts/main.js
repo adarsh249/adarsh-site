@@ -31,7 +31,12 @@ backToTopButton.addEventListener('click', () => {
 });
 
 function scrollToProjects() {
-    window.location.href = 'https://adarsh249.github.io/adarsh-site/'
     const projectsDiv = document.querySelector('.projects');
-    projectsDiv.scrollIntoView({ behavior: 'smooth' });
+    if (projectsDiv) {
+        projectsDiv.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        window.location.href = 'https://adarsh249.github.io/adarsh-site/';
+        const projects = document.querySelector('.projects');
+        projects.scrollIntoView({ behavior: 'smooth' });
+    }
 }
