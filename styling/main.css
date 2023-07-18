@@ -54,6 +54,12 @@ body {
     padding-bottom: 10px;
 }
 
+.about a{
+    color:#5749b3
+}
+
+
+
 /* Arrow styling from https://codepen.io/vlt_dev/pen/NWMNzpE */
 .arrow {
     position: absolute;
